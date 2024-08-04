@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <title>CryptoBull</title>
+</head>
+<body>
+
+<div id="Home" class="tabcontent">
+  <div class="headerhome">
+    <img src="bitcoin.gif" alt="bitcoin" class="logo" style="width:100px;height:100px;">CryptoBull<img src="bull run.gif" alt="bull running" class="logo" style="width:100px;height:100px;"<sub>GH</sub>
+  </div>
+<h2 style="color:green;">Live Market Data</h2>
+  <br> </br>
+  <script type="text/javascript" src="https://files.coinmarketcap.com/static/widget/coinPriceBlock.js"></script><div id="coinmarketcap-widget-coin-price-block" coins="1,1027,5426,825,1839" currency="USD" theme="dark" transparent="false" show-symbol-logo="true"></div>
+
+  <h2 style="text-align:center;background-color:green;">Which Type of Investor Are You?</h2>
+  <h3 style="text-align:center;background-color:green;">(Tap Check Below)</h3>
+  <div class="row">
+    <div class="column1">
+      <h2 style="text-align:center;">Bullish</h2>
+      <img src="bull chart.gif" alt="bull chart" class="logo"  style="width:200px;height:200px;">
+      <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Check</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a><p>Bull Minded
+            <ul style="list-style-type:circle">
+              <li>Optimistic about the future of cryptocurrencies, believing that prices will rise.</li>
+              <li>Likely to buy and hold (HODL) cryptocurrencies, invest in initial coin offerings (ICOs), and explore new projects.</li>
+              <li>Exhibits higher risk tolerance, willing to withstand market volatility in anticipation of long-term gains.</li>
+            </ul></P><p>Bear Minded
+              <ul style="list-style-type:circle">
+                <li>Pessimistic about the market, anticipating a decline in cryptocurrency prices.</li>
+                <li>Prefer short selling, using put options, or staying in stablecoins or fiat to avoid losses.</li>
+                <li>Exhibits lower risk tolerance, often moving quickly to liquidate positions at the first sign of trouble.</li>
+              </ul></P>
+</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="column1">
+      <h2 style="text-align:center;">Bearish</h2>
+      <img src="bear chart.gif" alt="bear chart" class="logo"  style="width:190px;height:190px;">
+    </div>
+
+  <div class="dashboard">
+    <h2 style="text-align:center;">Investment Dashboard</h2>
+    <table id="investmentTable">
+      <thead>
+        <tr>
+          <th>Investor Number</th>
+          <th>Daily Profit (%)</th>
+          <th>Daily Profit (₵)</th>
+        </tr>
+      </thead>
+      <tbody id="investmentData">
+        <!-- Data will be dynamically inserted here -->
+      </tbody>
+    </table>
+  </div>
+     <script src="https://public.bnbstatic.com/unpkg/growth-widget/cryptoCurrencyWidget@0.0.13.min.js" ></script><div class="binance-widget-marquee" data-cmc-ids="1,1027,1839,5426" data-theme="dark" data-transparent="false" data-powered-by="Powered by" data-disclaimer="Disclaimer" ></div>
+</div>
+  </div>
+<div id="Markets" class="tabcontent">
+  <div class="headerhome">
+    <img src="bitcoin.gif" alt="bitcoin" class="logo" style="width:100px;height:100px;">CryptoBull <img src="bull run.gif" alt="bull running" class="logo" style="width:100px;height:100px;">
+  </div>
+  <h3>Markets</h3>
+  <p>Some news this fine day!</p> 
+</div>
+
+<div id="Portfolio" class="tabcontent">
+  <div class="headerhome">
+    <img src="bitcoin.gif" alt="bitcoin" class="logo" style="width:100px;height:100px;">CryptoBull <img src="bull run.gif" alt="bull running" class="logo" style="width:100px;height:100px;">
+  </div>
+  <h3>Portfolio</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="More" class="tabcontent">
+  <div class="headerhome">
+    <img src="bitcoin.gif" alt="bitcoin" class="logo" style="width:100px;height:100px;">CryptoBull <img src="bull run.gif" alt="bull running" class="logo" style="width:100px;height:100px;">
+  </div>
+  <h3>More</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+<div class="tab-bar">
+  <button class="tablink" onclick="openPage('Home', this, 'red')" id="defaultOpen">
+    <i class="fas fa-home"></i> Home
+  </button>
+  <button class="tablink" onclick="openPage('Markets', this, 'green')">
+    <i class="fab fa-bitcoin"></i> Markets
+  </button>
+  <button class="tablink" onclick="openPage('Portfolio', this, 'blue')">
+    <i class="fas fa-wallet"></i> Portfolio
+  </button>
+  <button class="tablink" onclick="openPage('More', this, 'orange')">
+    <i class="fas fa-angle-double-right"></i> More
+  </button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
